@@ -1,4 +1,4 @@
-# Caculator Project built with Flutter
+# Calculator Project built with Flutter
 
 This is a simple Calculator Project covering the complete design of a Standard Basic
 Calculator. This project is purely done from scratch except for the icons. This app is
