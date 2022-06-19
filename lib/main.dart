@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 
 
 main() {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(const Calculator());
