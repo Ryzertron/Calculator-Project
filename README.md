@@ -5,7 +5,7 @@ Calculator. This project is purely done from scratch except for the icons. This 
 built only using stateless widgets.
 
 ## ScreenShot
-![image](assets\screenshots\Screenshot_2022.06.19_13.38.54.496.png)
+![image](assets/screenshots/Screenshot_2022.06.19_13.38.54.496.png)
 
 ## Run The Debug Program
 Follow the steps below to run the app on your local machine.
