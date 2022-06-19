@@ -1,3 +1,5 @@
+import 'package:calculator/functions/arithmetic_functions.dart';
+import 'package:calculator/screens/screen_home.dart';
 import 'package:flutter/material.dart';
 
 class NumButton extends StatelessWidget {
@@ -12,7 +14,9 @@ class NumButton extends StatelessWidget {
         aspectRatio: 3 / 2,
         child: OutlinedButton(
             style: const ButtonStyle(enableFeedback: true),
-            onPressed: () {},
+            onPressed: () {
+              inputNumber(inputNumber: label);
+            },
             child: Text(
               label,
               style: const TextStyle(
@@ -40,7 +44,35 @@ class ActionButton extends StatelessWidget {
         aspectRatio: 3 / 2,
         child: OutlinedButton(
           style: const ButtonStyle(enableFeedback: true),
-          onPressed: () {},
+          onPressed: () {
+            if (label == '+') {
+              addFunction();
+            } else if (label == '−') {
+              subFunction();
+            } else if (label == '×') {
+              multiplyFunction();
+            } else if (label == '÷') {
+              divFunction();
+            } else if (label == 'C') {
+              clearFunction();
+            } else if (label == '⌫') {
+              backSpace();
+            } else if (label == '=') {
+              answerfunction();
+            } else if (label == 'π') {
+              piFunction();
+            } else if (label == '•') {
+              if (decimalValidate() == true) {
+                inputNumber(inputNumber: '.');
+              }
+            } else if (label == '%') {
+              if (percentageFunction()) {
+                multiplyFunction();
+                Output.value = '100';
+                answerfunction();
+              }
+            }
+          },
           child: Text(
             label,
             style: const TextStyle(
