@@ -19,3 +19,5 @@ Let me know if you encounter issues with the calculator
 4. Try it out.
 
 ## Links
+### Web Version 
+[**Only Works on 1080p Mobile Screens**] : https://ryzertron.github.io/Calculator-Project/#/
